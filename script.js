@@ -1,17 +1,17 @@
 const yearNumbers = {
     0: "",
-    1: "ichi",
-    2: "ni",
-    3: "san",
-    4: "yon",
-    5: "go",
-    6: "roku",
-    7: "nana",
-    8: "hachi",
-    9: "kyu",
-    "ten": "jū",
-    "hundred": "hyaku",
-    "thousand": "sen"
+    1: "いち",
+    2: "に",
+    3: "さん",
+    4: "ゆん",
+    5: "ご",
+    6: "ろく",
+    7: "なな",
+    8: "はち",
+    9: "きゅ",
+    "ten": "じゅう",
+    "hundred": "ひゃく",
+    "thousand": "せん"
 };
 
 const monthNumbers = {
