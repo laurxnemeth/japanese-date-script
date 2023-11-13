@@ -115,7 +115,7 @@ class translateDate {
  };
 
  returnDate(){
-    return `${this.translateYear()} ${this.translateMonth()} ${this.translateDay()}`;
+    return `きょうは ${this.translateYear()} ${this.translateMonth()} ${this.translateDay()}`;
  };
 };
 
