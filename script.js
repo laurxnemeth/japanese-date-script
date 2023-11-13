@@ -15,32 +15,32 @@ const yearNumbers = {
 };
 
 const monthNumbers = {
-    1: "ichi",
-    2: "ni",
-    3: "san",
-    4: "shi",
-    5: "go",
-    6: "roku",
-    7: "shichi",
-    8: "hachi",
-    9: "ku",
-    10: "juu"
+    1: "いち",
+    2: "に",
+    3: "さん",
+    4: "し",
+    5: "ご",
+    6: "ろく",
+    7: "しち",
+    8: "はち",
+    9: "く",
+    10: "じゅう"
 };
 
 const irregularDayNumbers = {
-    1: "tsuitachi",
-    2: "futsuka",
-    3: "mikka",
-    4: "yokka",
-    5: "itsuka",
-    6: "muika",
-    7: "nanoka",
-    8: "yôka",
-    9: "kokonoka",
-    10: "tôka",
-    14: "jûyokka",
-    20: "hatsuka",
-    24: "nijûyokka"
+    1: "ついたち",
+    2: "ふつか",
+    3: "みっか",
+    4: "よっか",
+    5: "いつか",
+    6: "むいか",
+    7: "なのか",
+    8: "ようか",
+    9: "ここのか",
+    10: "とおか",
+    14: "じゅうよっか",
+    20: "はつか",
+    24: "にじゅうよっか"
 };
 
 monthNumbers[11] = monthNumbers[10]+monthNumbers[1];
@@ -96,7 +96,7 @@ class translateDate {
 
  translateMonth() {
     const month = this.date.getMonth();
-    return `${monthNumbers[month+1]}-gatsu`;
+    return `${monthNumbers[month+1]}-がつ`;
  };
 
  translateDay() {
@@ -110,7 +110,7 @@ class translateDate {
         const firstDigit = regularDay[0] === 1 ? yearNumbers.ten : `${yearNumbers[regularDay[0]]}-${yearNumbers.ten}`;
         const secondDigit = monthNumbers[regularDay[1]];
 
-        return `${firstDigit}${secondDigit}-nichi`
+        return `${firstDigit}${secondDigit}-にち`
     }
  };
 
