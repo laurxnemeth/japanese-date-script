@@ -96,7 +96,7 @@ class translateDate {
 
  translateMonth() {
     const month = this.date.getMonth();
-    return `${monthNumbers[month+1]}-がつ`;
+    return `${monthNumbers[month+1]}がつ[月]`;
  };
 
  translateDay() {
@@ -110,7 +110,7 @@ class translateDate {
         const firstDigit = regularDay[0] === 1 ? yearNumbers.ten : `${yearNumbers[regularDay[0]]}-${yearNumbers.ten}`;
         const secondDigit = monthNumbers[regularDay[1]];
 
-        return `${firstDigit}${secondDigit}-にち`
+        return `${firstDigit}${secondDigit}-にち[日]`
     }
  };
 
